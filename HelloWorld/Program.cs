@@ -8,7 +8,7 @@ class Program
 
         string textFormated = string.Format(texto, "Kayo", "4");
 
-        Console.WriteLine(textFormated)
+        Console.WriteLine(textFormated);
 
     }
 }
