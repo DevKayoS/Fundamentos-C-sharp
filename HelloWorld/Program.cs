@@ -1,17 +1,14 @@
-﻿using HelloWorld.Teste;
-
-namespace HelloWorld;
+﻿namespace HelloWorld;
 
 class Program
 {
-    // executar sem retornar nada
     static void Main()
     {
-        Carro meuCarro = new Carro();
+        string texto = " o usuario {0} gosta do numero {1}";
 
-        meuCarro.Ligar();
-        meuCarro.Desligar();
+        string textFormated = string.Format(texto, "Kayo", "4");
 
-        meuCarro.Teste2();
+        Console.WriteLine(textFormated)
+
     }
 }
