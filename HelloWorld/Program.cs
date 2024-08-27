@@ -12,9 +12,6 @@ class Program
         meuCarro.Ligar();
         meuCarro.Desligar();
 
-
-        Biscoito meuBiscoito = new Biscoito();
-
-        meuBiscoito.Temperatura();
+        meuCarro.Teste2();
     }
 }
