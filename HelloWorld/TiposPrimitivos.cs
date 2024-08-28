@@ -1,4 +1,6 @@
 ﻿using System.Text;
+using System.Globalization;
+
 
 namespace HelloWorld
 {
@@ -71,6 +73,33 @@ namespace HelloWorld
 
             Console.WriteLine(paragrafo2);
             Console.WriteLine(resultado);
+
+
+            string texto = " o usuario {0} gosta do numero {1}";
+
+            string textFormated = string.Format(texto, "Kayo", 7);
+
+
+            Console.WriteLine(textFormated);
+        }
+
+        void Date()
+        {
+            DateOnly dia = new DateOnly(2024, 12, 1);
+
+            string diaEmTexto = dia.ToString("dd MMMM yyyy", new CultureInfo("pt-br"));    
+            string diaEmTextoTeste = dia.ToLongDateString();
+
+            DateTime dataHora = new DateTime(2024, 12, 1, 20,12,1);
+
+            DateTime hoje = DateTime.Today;
+            DateTime hojeHora =  DateTime.UtcNow;
+
+            DateTime novaData = hojeHora.AddDays(1);
+        
+            Console.WriteLine(hoje);
+            Console.WriteLine(hojeHora);
+            Console.WriteLine(novaData);
         }
 
     }
