@@ -1,10 +1,8 @@
-﻿using System.Globalization;
+namespace HelloWorld.funcoes;
 
-namespace HelloWorld;
-
-class Program
+public class Funcoes
 {
-    static void Main()
+    public void UsandoFuncoes()
     {
         var matematica = new OperacoesMatematicas();
         
