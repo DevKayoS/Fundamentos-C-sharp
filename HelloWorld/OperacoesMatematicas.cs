@@ -10,4 +10,10 @@ public class OperacoesMatematicas
 
         return (resultado, name);
     }
+
+    public void Teste(int valor1, int valor2 = 9, string author = "Kayo")
+    {
+        Console.WriteLine(valor1 + valor2);
+        Console.WriteLine(author);
+    }
 }
