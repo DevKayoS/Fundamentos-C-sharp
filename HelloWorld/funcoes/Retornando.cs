@@ -4,11 +4,10 @@ public class Funcoes
 {
     public void UsandoFuncoes()
     {
-        var matematica = new OperacoesMatematicas();
         
-        int resultado = matematica.Adicionar(valor1: 1, valor2: 8);
+        int resultado = OperacoesMatematicas.Adicionar(valor1: 1, valor2: 8);
 
-        var resultadoComNome = matematica.Somar(valor1: 10, valor2: 32,  name: "Kayo");
+        var resultadoComNome = OperacoesMatematicas.Somar(valor1: 10, valor2: 32,  name: "Kayo");
 
         int numeroResultado = resultadoComNome.resultadoDaAdicao; 
         string nomeResultado = resultadoComNome.autor; 
@@ -17,7 +16,7 @@ public class Funcoes
         Console.WriteLine(numeroResultado);
         Console.WriteLine(nomeResultado);
         
-        (int resultadoa, string name) = matematica.Somar(valor1: 10, valor2: 32,  name: "Kayo");
+        (int resultadoa, string name) = OperacoesMatematicas.Somar(valor1: 10, valor2: 32,  name: "Kayo");
 
         Console.WriteLine(resultadoa);
         Console.WriteLine(name);

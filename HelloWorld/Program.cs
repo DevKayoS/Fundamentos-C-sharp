@@ -6,19 +6,14 @@ class Program
 {
     static void Main()
     {
-        var carro = new Carro("Ferrari")
-        {
-            cor = Cor.Vermelho,
-            LancadoEm = new DateOnly(2021, 01, 07)
-        };
-        
-        var outroCarro = new Carro("Fuscao Preto")
-        {
-            cor = Cor.Preto,
-            LancadoEm = new DateOnly(1978, 01, 07)
-        };
+        var resultado = OperacoesMatematicas.Adicionar(1, 2);
 
+        var carro = new Carro("Fuscao Preto");
+        var carro2 = new Carro("Ferrari");
+        
         carro.NomeDoModelo();
-        outroCarro.NomeDoModelo();
+        carro2.NomeDoModelo();
+        
+        
     }
 }
