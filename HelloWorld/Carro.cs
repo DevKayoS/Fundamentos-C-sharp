@@ -1,26 +1,22 @@
 ﻿namespace HelloWorld;
 internal class Carro
 {
-    public void Ligar()
-    {
-        Console.WriteLine("Carro LIGADO");
-    }
-                                                                                                                                
-    public void Desligar()
-    {
-        Console.WriteLine("Carro DESLIGADO");
-    }
+  public string Modelo { get; set;}
+  public DateOnly LancadoEm { get; set; }
+  public Cor cor { get; set; }
 
-    private void Teste1()
-    {
-        Console.WriteLine("Teste 1");
-    }
 
-    internal void Teste2()
-    {
-        Teste1();
+  public Carro(string modelo)
+  {
+    Modelo = modelo;
+  }
 
-        Console.WriteLine("Teste 2");
-    }
-
+  public void NomeDoModelo() => Console.WriteLine(Modelo);
+  public void CorDoCarro() => Console.WriteLine(cor);
+  public void DataDeLancamento() => Console.WriteLine(LancadoEm);
+  
+  
 }
+
+
+
