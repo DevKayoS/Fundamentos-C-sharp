@@ -47,5 +47,31 @@ public class Condicoes
         {
             Console.WriteLine("A cor é Preto");
         }
+        
+        if (cores == Cor.Preto && numero >= 0 && ativo)
+        {
+            Console.WriteLine("passando");
+        }
+
+        if (autor.Equals("Julia") || ativo)
+        {
+            Console.WriteLine("tbm passou");          
+        }
+        
+        string menssagemDeErro = null;
+
+        if (menssagemDeErro is not  null && menssagemDeErro.ToUpper().Equals("KAYO"))
+        {
+            Console.WriteLine("Passou nao sendo null");
+        }
+        else if (menssagemDeErro.ToUpper().Equals("KAYO"))
+        {
+            Console.WriteLine("passou");
+        }
+        
+        if (numero > 0 || saldo > 10 && autor.Equals("Julia"))
+        {
+            Console.WriteLine("Passando no teste");
+        }
     }
 }
